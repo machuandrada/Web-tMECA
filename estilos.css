@@ -2,15 +2,19 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     margin: 0;
 }
 
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
-p{ font-size: 1.25;}
+p{ font-size: 1.25em;}
 ul{ list-style: none;}
 li{ font-size: 1.25em;}
 
@@ -21,13 +25,196 @@ button{
     border-radius: 5px;
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: black;
-    background-color: yellow;
+    color: white;
+    background-color: rgb(206, 15, 15);
 }
 
 button:hover{
-    background-color: rgb(214, 214, 8);
+    background-color: rgb(231, 6, 6);
 }
 
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: red; }
+
+header{
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(238, 12, 12);
+    font-size: 2.00em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(240, 9, 9);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/asientos-sparco-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-tMECA .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#somos-tMECA h2{
+    font-size: 6vw;
+}
+
+#somos-tMECA p{
+    font-size: 3vw;
+}
+
+#nuestros-accesorios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-accesorios .container{
+    padding: 150px 12px;
+}
+
+#nuestros-accesorios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-accesorios p{
+    display: none;
+}
+
+#nuestros-accesorios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/D_NQ_NP_689352-MLA43622321626_092020-O.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/D_NQ_NP_778940-MLA41754344567_052020-V.jpg");
+}
+
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/D_NQ_NP_851278-MLA40342382009_012020-O.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 
