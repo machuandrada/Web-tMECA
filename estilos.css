@@ -128,9 +128,10 @@ header a:hover{
 }
 
 #nuestros-accesorios h2{
+    
     margin-top: 0;
-    font-size: 3.2em;
-}
+    font-size: 6vw;
+}    
 
 #nuestros-accesorios p{
     display: none;
@@ -142,6 +143,7 @@ header a:hover{
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
+    font-size: 2vw;
 }
 
 .carta:first-child{
@@ -216,5 +218,111 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-tMECA .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-tMECA .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-tMECA h2{
+        margin-top: 0px;
+        font-size: 2.0em;
+    }
+
+    #somos-tMECA .img-container{
+        background-image: url("media/D_NQ_NP_851278-MLA40342382009_012020-O.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-accesorios .accesorios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-accesorios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-accesorios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-accesorios .carta{
+        padding: 50px;
+    }
+
+    #caracteristicas{
+        background-image: url("media/images.png");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+@media (min-width: 1100px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+
+}
+
+}
+
+
 
 
