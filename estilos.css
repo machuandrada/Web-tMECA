@@ -109,14 +109,6 @@ header a:hover{
     padding: 200px 12px;
 }
 
-#somos-tMECA h2{
-    font-size: 6vw;
-}
-
-#somos-tMECA p{
-    font-size: 3vw;
-}
-
 #nuestros-accesorios{
     background-color: rgb(30,30,30);
     color: white;
@@ -128,9 +120,8 @@ header a:hover{
 }
 
 #nuestros-accesorios h2{
-    
     margin-top: 0;
-    font-size: 6vw;
+    font-size: 3.2em;
 }    
 
 #nuestros-accesorios p{
@@ -143,7 +134,6 @@ header a:hover{
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
-    font-size: 2vw;
 }
 
 .carta:first-child{
